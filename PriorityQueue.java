@@ -16,6 +16,10 @@ public class PriorityQueue {
 		shoppingList.add("Bread");
 		shoppingList.add("Coke");
 		shoppingList.add("Sugar");
+		shoppingList.add("eggs");
+		shoppingList.add("bacon");
+		shoppingList.add("spring onion");
+		shoppingList.add("coffee");
 
 		System.out.println("shoppingList : " + shoppingList);
 
