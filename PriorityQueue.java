@@ -8,30 +8,30 @@ public class PriorityQueue {
 
 	public static void main(String[] args) {
 		// Create and initialize a LinkedList
-		LinkedList<String> shoppingList = new LinkedList<>();
+		LinkedList<String> groceryList = new LinkedList<>();
 
 		// Adding new elements
-		shoppingList.add("cheese");
-		shoppingList.add("Milk");
-		shoppingList.add("Bread");
-		shoppingList.add("Coke");
-		shoppingList.add("Sugar");
+		groceryList.add("cheese");
+		groceryList.add("Milk");
+		groceryList.add("Bread");
+		groceryList.add("Coke");
+		groceryList.add("Sugar");
 
-		System.out.println("shoppingList : " + shoppingList);
+		System.out.println("groceryList : " + groceryList);
 
-		boolean name = shoppingList.add("Coffee");// adding an element
-		System.out.println("Removed from ShoppingList : " + name + " | New ShoppingList : " + shoppingList);
+		boolean name = groceyList.add("Coffee");// adding an element
+		System.out.println("Removed from groceyList : " + name + " | New groceryList : " + groceryList);
 
 		// Removing an element , if empty it return null
 
-		name = shoppingList.poll() != null;
+		name = groceryList.poll() != null;
 
-		System.out.println("Removed from ShoppingList : " + name + " | New ShoppingList : " + shoppingList);
+		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceyList);
 
-		System.out.println("The size of the list is" + " " + shoppingList.size());// size of the list
+		System.out.println("The size of the list is" + " " + groceyList.size());// size of the list
 
-		shoppingList.sort(new MyComparator());// sorting the list
-		System.out.println("After sorting: " + shoppingList);
+		groceryList.sort(new MyComparator());// sorting the list
+		System.out.println("After sorting: " + groceryList);
 	}
 }
 
