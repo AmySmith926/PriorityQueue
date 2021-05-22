@@ -8,34 +8,34 @@ public class PriorityQueue {
 
 	public static void main(String[] args) {
 		// Create and initialize a LinkedList
-		LinkedList<String> shoppingList = new LinkedList<>();
+		LinkedList<String> groceryList = new LinkedList<>();
 
 		// Adding new elements
-		shoppingList.add("cheese");
-		shoppingList.add("Milk");
-		shoppingList.add("Bread");
-		shoppingList.add("Coke");
-		shoppingList.add("Sugar");
-		shoppingList.add("eggs");
-		shoppingList.add("bacon");
-		shoppingList.add("spring onion");
-		shoppingList.add("coffee");
+		groceryList.add("cheese");
+		groceryList.add("Milk");
+		groceryList.add("Bread");
+		groceryList.add("Coke");
+		groceryList.add("Sugar");
+		groceryList.add("eggs");
+		groceryList.add("bacon");
+		groceryList.add("spring onion");
+		groceryList.add("coffee");
 
-		System.out.println("shoppingList : " + shoppingList);
+		System.out.println("groceryList : " + groceryList);
 
-		boolean name = shoppingList.add("Coffee");// adding an element
-		System.out.println("Removed from ShoppingList : " + name + " | New ShoppingList : " + shoppingList);
+		boolean name = groceryList.add("tea");// adding an element
+		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceryList);
 
 		// Removing an element , if empty it return null
 
-		name = shoppingList.poll() != null;
+		name = groceryList.poll() != null;
 
-		System.out.println("Removed from ShoppingList : " + name + " | New ShoppingList : " + shoppingList);
+		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceryList);
 
-		System.out.println("The size of the list is" + " " + shoppingList.size());// size of the list
+		System.out.println("The size of the list is" + " " + groceryList.size());// size of the list
 
-		shoppingList.sort(new MyComparator());// sorting the list
-		System.out.println("After sorting: " + shoppingList);
+		groceryList.sort(new MyComparator());// sorting the list
+		System.out.println("After sorting: " + groceryList);
 	}
 }
 
