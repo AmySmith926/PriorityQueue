@@ -16,6 +16,7 @@ public class PriorityQueue {
 		groceryList.add("Bread");
 		groceryList.add("Coke");
 		groceryList.add("Sugar");
+
 		groceryList.add("eggs");
 		groceryList.add("bacon");
 		groceryList.add("spring onion");
@@ -26,13 +27,20 @@ public class PriorityQueue {
 		boolean name = groceryList.add("tea");// adding an element
 		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceryList);
 
+
+		System.out.println("groceryList : " + groceryList);
+
+	
+
 		// Removing an element , if empty it return null
 
 		name = groceryList.poll() != null;
 
-		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceryList);
 
-		System.out.println("The size of the list is" + " " + groceryList.size());// size of the list
+		System.out.println("Removed from groceryList : " + name + " | New groceryList : " + groceyList);
+
+		System.out.println("The size of the list is" + " " + groceyList.size());// size of the list
+
 
 		groceryList.sort(new MyComparator());// sorting the list
 		System.out.println("After sorting: " + groceryList);
